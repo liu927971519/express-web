@@ -1,0 +1,9 @@
+启动： node server.js
+指定端口运行：set POST = 9001 & server.js
+停止：ctrl + c 两次
+
+长期启动:
+1. 安装pm2 npm i pm2 -g
+2. 启动pm2 start server.js
+3. 查看状态 pm2 status 
+4. 停止pm2 stop server.js

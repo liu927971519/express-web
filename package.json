@@ -1,8 +1,12 @@
 {
-  "name": "node静态服务器",
+  "name": "express-web",
   "version": "1.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "node server.js",
+    "start": "pm2 start server.js",
+    "stop": "pm2 stop server & pm2 delete server"
+  },
   "private": true,
   "dependencies": {
   },
@@ -11,7 +15,7 @@
     "express": "^4.16.3"
   },
   "engines": {
-    "node": "9.10.1",
-    "npm": "6.1.0"
+    "node": ">=9.10.1",
+    "npm": ">=6.1.0"
   }
 }

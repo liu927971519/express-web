@@ -11,12 +11,15 @@
 ## 特性
 1. 支持自定义端口
 2. 支持gzip
+
+## 计划
+1. 新增对缓存控制
  
 ## 使用说明
 #### node启动
 ```
 启动： node server.js
-指定端口运行：set POST = 9001 & server.js
+指定端口运行：set POST = 9001 & node server.js
 停止：ctrl + c 两次
 ```
 #### pm2启动

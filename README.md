@@ -15,12 +15,15 @@
 
 ## 计划
 1. 新增对缓存控制（2018-12-19 完成）
+2. 新增在npm run dev之后自动打开默认浏览器 (2018-12-26 完成)
  
 ## 使用说明
 #### node启动
 ```
 启动： node server.js
-指定端口运行：set POST = 9001 & node server.js
+指定端口运行：
+    window:  set POST = 9001 & node server.js
+    ubuntu:  PORT=9001 node serve.js
 停止：ctrl + c 两次
 ```
 #### pm2启动

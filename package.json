@@ -1,18 +1,20 @@
 {
   "name": "express-web",
   "version": "1.0.0",
+  "description": "express为基础的静态服务器",
+  "author": "刘力建",
   "license": "MIT",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "set Open=true & node server.js",
     "start": "pm2 start server.js",
     "stop": "pm2 stop server & pm2 delete server"
   },
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "compression": "^1.7.3",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "opn": "^5.4.0"
   },
   "engines": {
     "node": ">=9.10.1",

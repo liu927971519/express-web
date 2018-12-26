@@ -1,5 +1,6 @@
 const express = require('express'); // 服务
 const compression = require('compression'); // gzip
+const opn = require('opn'); // node的自动打开浏览器
 const path = require('path');
 const app = express();
 
@@ -15,6 +16,9 @@ app.get('*', function(req,res) {
 
 app.listen(process.env.PORT || 3002, function() {
   console.log(`已经启动服务： http://127.0.0.1:${process.env.PORT || 3002}`)
+  if (process.env.Open) {
+    opn(`http://127.0.0.1:${process.env.PORT || 3002}/index.html`);
+  }
 });
 
 // 缓存控制

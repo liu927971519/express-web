@@ -22,7 +22,7 @@
 ```
 启动： node server.js
 指定端口运行：
-    window:  set POST = 9001 & node server.js
+    window:  set PORT = 9001 & node server.js
     ubuntu:  PORT=9001 node serve.js
 停止：ctrl + c 两次
 ```

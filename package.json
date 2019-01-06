@@ -1,6 +1,6 @@
 {
-  "name": "express-web",
-  "version": "1.0.0",
+  "name": "express-static-web",
+  "version": "0.0.9",
   "description": "express为基础的静态服务器",
   "author": "刘力建",
   "license": "MIT",
@@ -9,15 +9,23 @@
     "start": "pm2 start server.js",
     "stop": "pm2 stop server & pm2 delete server"
   },
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
+  "bin": {
+    "express-static-web": "./bin/express-static-web"
+  },
+  "files": [
+    "server.js",
+    "package.json",
+    "README.md",
+    "bin"
+  ],
+  "dependencies": {
     "compression": "^1.7.3",
     "express": "^4.16.3",
     "opn": "^5.4.0"
   },
+  "devDependencies": {},
   "engines": {
-    "node": ">=9.10.1",
+    "node": ">=8.10.0",
     "npm": ">=6.1.0"
   }
 }

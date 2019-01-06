@@ -16,13 +16,30 @@
 ## 计划
 1. 新增对缓存控制（2018-12-19 完成）
 2. 新增在npm run dev之后自动打开默认浏览器 (2018-12-26 完成)
+3. 新增npm包下载使用（2019-01-06 完成）
  
 ## 使用说明
+### npm安装使用
+```
+  1. npm i express-static-web --save-dev
+  2. 在package.json的script中添加"server": "express-static-web"
+  3. npm run server  启动
+```
+
+### 用于在服务器上部署前端项目
+```
+  1. 安装pm2： npm install -g  pm2
+  2. 克隆本项目： git clone https://github.com/liu927971519/expresss-web.git
+  3. 将打包好的部署文件放在dist文件夹
+  4. 启动: npm run start 或 PORT=端口号 npm run start
+```
+
+### 扩展
 #### node启动
 ```
 启动： node server.js
 指定端口运行：
-    window:  set POST = 9001 & node server.js
+    window:  set PORT = 9001 & node server.js
     ubuntu:  PORT=9001 node serve.js
 停止：ctrl + c 两次
 ```

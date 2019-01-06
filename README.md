@@ -1,6 +1,6 @@
 # express-web
 
-![NPM version](https://img.shields.io/badge/express--static--web-v0.0.9-green.svg)
+![NPM version](https://img.shields.io/badge/express--static--web-V%200.0.10-brightgreen.svg)
 
 > 使用express搭建一个静态服务器
 

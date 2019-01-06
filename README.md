@@ -1,4 +1,7 @@
 # express-web
+
+![NPM version](https://img.shields.io/badge/express--static--web-v0.0.9-green.svg)
+
 > 使用express搭建一个静态服务器
 
 ## 必要条件

@@ -3,21 +3,21 @@ const compression = require('compression'); // gzip
 const opn = require('opn'); // node的自动打开浏览器
 const path = require('path');
 const app = express();
-
+const filePath = path.join(__dirname, `${process.env.Folder || 'dist'}`);
 app.use(compression());
 
-app.use(express.static(__dirname + '/dist', {
+app.use(express.static(filePath, {
   setHeaders: setCustomCacheControl
 }));
 
 app.get('*', function(req,res) {
-  res.sendFile(path.join(__dirname, '../../', 'dist/index.html'));
+  res.sendFile(`${filePath}/index.html`);
 });
 
-app.listen(process.env.PORT || 3002, function() {
-  console.log(`已经启动服务： http://127.0.0.1:${process.env.PORT || 3002}`)
+app.listen(process.env.Port || 3002, function() {
+  console.log(`已经启动服务： http://127.0.0.1:${process.env.Port || 3002}`)
   if (process.env.Open) {
-    opn(`http://127.0.0.1:${process.env.PORT || 3002}/index.html`);
+    opn(`http://127.0.0.1:${process.env.Port || 3002}/index.html`);
   }
 });
 

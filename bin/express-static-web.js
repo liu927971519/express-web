@@ -1,3 +1,3 @@
 'use strict';
 
-require('../lib/index');
+require('../lib/index.js');

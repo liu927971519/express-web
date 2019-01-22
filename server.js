@@ -3,7 +3,7 @@ const compression = require('compression'); // gzip
 const opn = require('opn'); // node的自动打开浏览器
 const path = require('path');
 const app = express();
-const filePath = path.join(__dirname, `${process.env.Folder || 'dist'}`);
+const filePath = getStaticUrl();
 app.use(compression());
 
 app.use(express.static(filePath, {
@@ -30,4 +30,10 @@ function setCustomCacheControl(res, path) {
     // 其他静态资源使用强缓存
     res.setHeader('Cache-Control', 'public, max-age=3600')
   }
+}
+
+// 获取静态文件的路径
+function getStaticUrl() {
+  const folder = `${process.env.Folder || 'dist'}`;
+  return path.join(__dirname, '../../', folder);
 }

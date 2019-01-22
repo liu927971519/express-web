@@ -1,13 +1,12 @@
 {
   "name": "express-static-web",
-  "version": "0.0.15",
+  "version": "0.0.19",
   "description": "express为基础的静态服务器",
   "author": "刘力建",
   "license": "MIT",
-  "scripts": {
-  },
+  "scripts": {},
   "bin": {
-    "express-static-web": "./bin/express-static-web.js"
+    "express-static-web": "./bin/index.js"
   },
   "files": [
     "server.js",

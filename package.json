@@ -1,6 +1,6 @@
 {
   "name": "express-static-web",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "express为基础的静态服务器",
   "author": "刘力建",
   "license": "MIT",

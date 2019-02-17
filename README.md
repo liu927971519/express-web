@@ -1,6 +1,6 @@
 # express-web 一个静态服务器
 
-![NPM version](https://img.shields.io/badge/express----static----web-V%200.0.17-brightgreen.svg)
+![NPM version](https://img.shields.io/badge/express----static----web-V%200.0.18-brightgreen.svg)
 
 > 在前端项目要发布测试与生产环境，一般情况都会将打包好资源文件，使用nginx或tomcat等方式
 进行本地验证，验证通过再进行线上部署。那有更便捷验证方式？就是express-web，详情使用请看
@@ -42,3 +42,5 @@
 
 ### 若有使用上问题或bug，欢迎在Issues提出
 
+### 已知问题
+1. 在Mac上无法正常使用

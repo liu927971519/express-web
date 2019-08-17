@@ -7,25 +7,25 @@
 下文。
 
 ## 必要条件
-使用之前必须保证已经安装好node>=8.10.0与npm>=6.1.0
+使用之前必须保证已经安装好 node >= 8.10.0 与 npm >= 6.1.0
 
 ## 特性
 1. 支持自定义端口
 2. 支持gzip
 3. 支持缓存
- 
+
 ## 使用说明
 ### npm安装使用
 ```
-  1. npm i express-static-web --save-dev
+  1. npm i express-static-web cross-env --save-dev
   2. 在package.json的script中添加
      "scripts": {
         "preserver": "npm run build",
         "server": "cross-env Port=3001 Open=true Folder=dist express-static-web dev",
      }
   3. npm run server 启动
-  
-  备注： 
+
+  备注：
         preserver: 在npm run server之前执行打包命令
         Port: 端口号
         Open: 是否自动打开浏览器
@@ -34,10 +34,11 @@
 
 ### 用于在服务器上部署前端项目
 ```
-  1. 安装pm2： npm install -g  pm2
+  1. 全局安装安装pm2： npm install -g  pm2
   2. 克隆本项目： git clone https://github.com/liu927971519/expresss-web.git
-  3. 将打包好的部署文件放在dist文件夹
-  4. 启动: npm run start 或 PORT=端口号 npm run start
+  3. 安装依赖 npm install
+  4. 将打包好的部署文件放在dist文件夹
+  5. 启动: npm run start 或 PORT=端口号 npm run start
 ```
 
 ### 若有使用上问题或bug，欢迎在Issues提出
